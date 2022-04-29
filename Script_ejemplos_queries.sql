@@ -1,6 +1,6 @@
 select * from products p limit 10;
 
-#TE AMO
+# TE AMO MARGEL
 
 select * from products p order by product_id desc limit 10;
 

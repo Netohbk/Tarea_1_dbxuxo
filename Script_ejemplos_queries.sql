@@ -1,5 +1,7 @@
 select * from products p limit 10;
 
+#TE AMO
+
 select * from products p order by product_id desc limit 10;
 
 select p.product_name, p.quantity_per_unit from products p ;

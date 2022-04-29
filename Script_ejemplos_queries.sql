@@ -1,5 +1,3 @@
-# Te amo 
-
 select * from products p limit 10;
 
 select * from products p order by product_id desc limit 10;

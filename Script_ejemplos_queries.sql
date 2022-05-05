@@ -44,7 +44,7 @@ select count(*) from orders o where shipped_date is not null;
 --
 -- elementos distintos
 --
-select distinct p.product_id ,p.product_name 
+select distinct p.product_id ,p.product_name , c.description 
 from categories c join products p using (category_id) 
 join order_details od using (product_id)
 join orders o using (order_id)
@@ -71,3 +71,4 @@ select p.quantity_per_unit  , p.product_name  from products p ;
 --
 select c.contact_name , c.city , s.contact_name ,s.city  from customers c 
 full join suppliers s using(contact_name);
+-- vemos si esto se actualiza 

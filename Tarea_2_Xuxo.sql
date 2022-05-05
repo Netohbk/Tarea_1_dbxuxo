@@ -43,7 +43,8 @@ create table superheroes_anios_servicio (
 	nombre varchar(50) not null,
 	equipo varchar (50) not null,
 	anios_servicio numeric(4) not null
-);--
+);
+--
 create sequence superheroes_anios_servicio_id_superheroe_anios_servicio_seq start 1 increment 1;
 alter table superheroes_anios_servicio alter column id_superheroe_anios_servicio set default nextval('superheroes_anios_servicio_id_superheroe_anios_servicio_seq');
 --
@@ -66,5 +67,7 @@ from superheroes_anios_servicio sas ;
 select  sas.nombre , string_agg(sas.equipo , ','), sum(sas.anios_servicio)
 from superheroes_anios_servicio sas
 group by sas.nombre  ;
+--
+
 
 

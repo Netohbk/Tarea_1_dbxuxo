@@ -6,7 +6,7 @@ esencialmente join y group by
 
 Se usa un join donde los valores coinciden ya que customer_id y id no están en ambas tablas pero están relacionados 
 
- ~~
+ ~~~
 select cl."name", c.email 
 from customer c 
 join customer_list cl on c.customer_id  = cl.id 
@@ -18,3 +18,4 @@ where country = 'Canada';
 ### 3. ¿Qué películas son las más rentadas en todas nuestras stores?
 
 ### 4. ¿Cuál es nuestro revenue por store?
+
